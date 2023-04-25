@@ -1,0 +1,78 @@
+{
+  "channels": [
+    {
+      "name": "Image Channel",
+      "type": "image",
+      "content": [
+        {
+          "file_id": "1",
+          "start_time": 0,
+          "end_time": 10
+        },
+        {
+          "file_id": "2",
+          "start_time": 10,
+          "end_time": 20
+        },
+        {
+          "file_id": "3",
+          "start_time": 20,
+          "end_time": 30
+        }
+      ]
+    },
+    {
+      "name": "Audio Channel",
+      "type": "audio",
+      "content": [
+        {
+          "file_id": "4",
+          "start_time": 0,
+          "end_time": 10
+        },
+        {
+          "file_id": "5",
+          "start_time": 10,
+          "end_time": 20
+        },
+        {
+          "file_id": "6",
+          "start_time": 20,
+          "end_time": 30
+        }
+      ]
+    }
+  ],
+  "resources": [
+    {
+      "id": "1",
+      "type": "image",
+      "content": "Acai berries on a wooden background, volumetric lighting, film photograph --ar 9:16"
+    },
+    {
+      "id": "2",
+      "type": "image",
+      "content": "Goji berries in a small bowl, volumetric lighting, film photograph --ar 9:16"
+    },
+    {
+      "id": "3",
+      "type": "image",
+      "content": "Pomegranate seeds scattered on a table --ar 9:16"
+    },
+    {
+      "id": "4",
+      "type": "voice",
+      "content": "Acai berries are rich in antioxidants, which help protect against cell damage from free radicals."
+    },
+    {
+      "id": "5",
+      "type": "voice",
+      "content": "Goji berries contain a wide range of nutrients, including vitamins A and C, iron, and fiber."
+    },
+    {
+      "id": "6",
+      "type": "voice",
+      "content": "Pomegranates are a great source of vitamin C and potassium, and they have anti-inflammatory properties."
+    }
+  ]
+}

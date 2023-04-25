@@ -1,0 +1,181 @@
+{
+    "types_of_shot": {
+        "type": "modifier",
+        "control": "dropdown",
+        "options": [
+            "wide shot",
+            "close up",
+            "landscape",
+            "medium shot",
+            "long shot",
+            "extreme close up",
+            "over the shoulder",
+            "point of view",
+            "bird's eye view",
+            "worm's eye view",
+            "dolly zoom",
+            "low angle",
+            "high angle",
+            "tilt",
+            "pan"
+        ]
+    },
+    "style": {
+        "type": "modifier",
+        "control": "dropdown",
+        "options": [
+            "official flat color",
+            "concept art",
+            "cinematic",
+            "photorealistic",
+            "cell shading",
+            "CGI",
+            "VFX",
+            "SFX",
+            "hyper maximalist",
+            "post-processing",
+            "post-production",
+            "tone mapping",
+            "HDR",
+            "low poly",
+            "minimalist"
+        ]
+    },
+    "lighting": {
+        "type": "modifier",
+        "control": "dropdown",
+        "options": [
+            "studio lighting",
+            "backlight",
+            "dramatic lighting",
+            "incandescent",
+            "soft lighting",
+            "volumetric",
+            "global illumination",
+            "ambient",
+            "contre-jour",
+            "scattering",
+            "shadows",
+            "rough",
+            "shimmering",
+            "lumen reflections",
+            "screen space reflections"
+        ]
+    },
+    "camera_lenses": {
+        "type": "modifier",
+        "control": "dropdown",
+        "options": [
+            "25mm lens",
+            "35mm lens",
+            "50mm lens",
+            "85mm lens",
+            "100mm lens",
+            "135mm lens",
+            "200mm lens",
+            "300mm lens",
+            "400mm lens",
+            "500mm lens",
+            "600mm lens",
+            "800mm lens",
+            "1000mm lens",
+            "1200mm lens",
+            "wide-angle lens"
+        ]
+    },
+    "color_scheme": {
+        "type": "modifier",
+        "control": "dropdown",
+        "options": [
+            "fluorescent color",
+            "pastel color",
+            "monochrome",
+            "black and white",
+            "sepia",
+            "duotone",
+            "warm colors",
+            "cool colors",
+            "earth tones",
+            "vibrant colors",
+            "complementary colors",
+            "analogous colors",
+            "triadic colors",
+            "split-complementary colors",
+            "tetradic colors"
+        ]
+    },
+    "composition": {
+        "type": "modifier",
+        "control": "dropdown",
+        "options": [
+            "rule of thirds",
+            "golden ratio",
+            "symmetry",
+            "leading lines",
+            "diagonal lines",
+            "frame within a frame",
+            "centered composition",
+            "foreground interest",
+            "background interest",
+            "negative space",
+            "positive space",
+            "fill the frame",
+            "pattern",
+            "texture",
+            "juxtaposition"
+        ]
+    },
+    "chaos": {
+        "type": "parameter",
+        "parameter_prefix": "--c",
+        "control": "entry_slider",
+        "min": 0,
+        "max": 100
+    },
+    "stylize": {
+        "type": "parameter",
+        "parameter_prefix": "--s",        
+        "control": "entry_slider",
+        "min": 0,
+        "max": 1000
+    },
+    "aspect_ratio": {
+        "type": "parameter",
+        "parameter_prefix": "--ar",
+        "control": "dropdown",
+        "options": [
+            "16:9",
+            "9:16",
+            "1:1",
+            "4:3",
+            "16:10",
+            "5:7"
+        ]
+    },
+    "tile": {
+        "type": "parameter",
+        "parameter_prefix": "--tile",
+        "control": "dropdown",
+        "options": [
+            " "
+        ]
+    },
+    "seed": {
+        "type": "parameter",
+        "parameter_prefix": "--seed",
+        "control": "entry_slider",
+        "min": 0,
+        "max": 2147483647
+    },
+    "quality": {
+        "type": "parameter",
+        "parameter_prefix": "--q",
+        "control": "dropdown",
+        "options": [
+            "0.25",
+            "0.5",
+            "1"
+        ]
+    }
+}
+

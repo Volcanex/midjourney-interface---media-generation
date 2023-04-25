@@ -1,0 +1,83 @@
+I'm working on this code. Here's a high-level structure of the program based on the video.json and the associated files:
+
+main.py: The entry point of the program.
+a. Read the video.json file.
+b. Instantiate a FileGenerator object with the "resources" content from the video.json file.
+c. Call the generate_files method to generate the files for the resources.
+d. Call the get_file_paths method to retrieve the file paths of the generated resources.
+e. Pass the "channels" content and the file paths to the VideoEditor class.
+f. Call the appropriate method of the VideoEditor class to create the final video.
+
+file_generator.py: Contains the FileGenerator class responsible for converting the content from the video.json file into actual files (e.g., images, audio, subtitles).
+
+video_editor.py: Contains the VideoEditor class, which handles the video creation process using the resources and channels information provided from the main.py.
+
+The flow of information and steps would be as follows:
+
+Read the video.json file in main.py.
+Pass the "resources" content to the FileGenerator class in file_generator.py to convert it into actual files (e.g., images, audio, subtitles). Store the generated files in their respective folders with their unique IDs.
+Retrieve the file paths of the generated resources using the get_file_paths method.
+Initialize the VideoEditor class in video_editor.py with the channels section of the video.json file and the retrieved file paths.
+Create the final video using the VideoEditor class.
+The program structure and flow should enable the program to create and edit the video based on the video.json file provided by the external client. 
+
+Here is example of the file I'd like to use. {
+  "channels": [
+    {
+      "name": "main",
+      "type": "image",
+      "content": [
+        {
+          "start_time": 0,
+          "end_time": 1,
+          "file_id": "1"
+        },
+        {
+          "start_time": 1,
+          "end_time": 6,
+          "file_id": "2"
+        }
+      ]
+    },
+    {
+      "name": "voiceover",
+      "type": "audio",
+      "content": [
+        {
+          "start_time": 0,
+          "end_time": 3,
+          "file_id": "3"
+        },
+        {
+          "start_time": 3,
+          "end_time": 6,
+          "file_id": "4"
+        }
+      ]
+    }
+
+  ],
+  "resources": [
+    {
+      "id": "1",
+      "type": "image",
+      "content": "gas giant planet, red --ar 9:16"
+    },
+    {
+      "id": "2",
+      "type": "image",
+      "content": "an earthlike planet with rings --ar 9:16"
+    },
+    {
+      "id": "3",
+      "type": "voice",
+      "content": "here is a gas giant"
+    },
+    {
+      "id": "4",
+      "type": "voice",
+      "content": "here is an earth like planet"
+    }
+  ]
+}
+
